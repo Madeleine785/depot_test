@@ -8,3 +8,10 @@ def saisir_notes():
         note = float(input(f"Note {i + 1} : "))
         notes.append(note)
     return notes# Fonctions du programme de gestion de notes
+
+
+
+def calculer_stats(notes):
+    """Renvoie la moyenne, la note la plus basse et la plus haute."""
+    moyenne = sum(notes) / len(notes)
+    return moyenne, min(notes), max(notes)
